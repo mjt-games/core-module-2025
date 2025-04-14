@@ -2,6 +2,8 @@
 
 
 ## 2025-04-14
+- go back to simple branch strat for deploy ([2aa3ae2](https://github.com/mjt-games/core-module-2025/commit/2aa3ae24472529a55c1bfe7bba63ce1f47ec58ad)) by Matt Taylor
+- Update changelog ([361bd87](https://github.com/mjt-games/core-module-2025/commit/361bd876c355a8945850e41f2cdd3f502ea1cff2)) by Matt Taylor
 - add types to as export ([4d39002](https://github.com/mjt-games/core-module-2025/commit/4d39002599fe64247f182dd849d5ac44b99517c2)) by Matt Taylor
 - Update changelog ([c4bbf09](https://github.com/mjt-games/core-module-2025/commit/c4bbf09d0949ffac3c10453d298de2584b73dc9e)) by Matt Taylor
 - make ts happy with exports ([970ecd1](https://github.com/mjt-games/core-module-2025/commit/970ecd14f6a731aee32f045cb5d099be39c8e11e)) by Matt Taylor
