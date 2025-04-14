@@ -30,8 +30,7 @@ git commit -m "Update changelog"
 git remote | xargs -I {} git push {} --all
 
 
-# BRANCH_NAME="${3:-build}_${VERSION}"
-BRANCH_NAME="${3:-build}"
+BRANCH_NAME="${3:-build}_${VERSION}"
 echo "🌿 Creating branch '$BRANCH_NAME' at HEAD..."
 git checkout -B "$BRANCH_NAME"
 
