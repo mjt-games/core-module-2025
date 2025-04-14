@@ -6,11 +6,6 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BUILD_DIR="${1:-dist}"
 BRANCH_NAME="${2:-build}"
 
-if [[ -z "$TAG_NAME" ]]; then
-  echo "Usage: ./publish-build.sh <tag-name>"
-  exit 1
-fi
-
 # Abort if working directory is dirty
 if [[ -n "$(git status --porcelain)" ]]; then
   echo "❌ You have uncommitted changes. Please commit or stash them first."
