@@ -5,7 +5,6 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 BUILD_DIR="${1:-dist}"
 DOCS_DIR="${2:-docs}"
-BRANCH_NAME="${3:-build}"
 
 # Abort if working directory is dirty
 if [[ -n "$(git status --porcelain)" ]]; then
@@ -18,11 +17,20 @@ fi
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 trap "git checkout $CURRENT_BRANCH" EXIT
 
+# Get the current date and time in YYYY.M.D-HHMM format without leading zeros
+VERSION=$(date +"%Y.%-m.%-d-%H%M")
+echo "Updating version to $VERSION"
+# Update the version in package.json
+sed -i '' "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
+
+git add package.json
 pnpm run changelog
 git add CHANGELOG.md
 git commit -m "Update changelog"
 git remote | xargs -I {} git push {} --all
 
+
+BRANCH_NAME="${3:-build}_${VERSION}"
 echo "🌿 Creating branch '$BRANCH_NAME' at HEAD..."
 git checkout -B "$BRANCH_NAME"
 

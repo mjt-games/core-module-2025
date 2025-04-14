@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# Get the current date and time in YYYY.M.D-HHMM format without leading zeros
-VERSION=$(date +"%Y.%-m.%-d-%H%M")
+VERSION=$1
+if [ -z "$VERSION" ]; then
+  echo "Usage: $0 <version>"
+  exit 1
+fi
+
 
 echo "Updating version to $VERSION"
 
