@@ -30,7 +30,8 @@ git commit -m "Update changelog"
 git remote | xargs -I {} git push {} --all
 
 
-BRANCH_NAME="${3:-build}_${VERSION}"
+# BRANCH_NAME="${3:-build}_${VERSION}"
+BRANCH_NAME="${3:-build}"
 echo "🌿 Creating branch '$BRANCH_NAME' at HEAD..."
 git checkout -B "$BRANCH_NAME"
 
@@ -49,6 +50,6 @@ pnpm run docs
 echo "📦 Committing build and doc artifacts..."
 git add -f "$BUILD_DIR"/. "$BUILD_DIR"/*
 git add -f "$DOCS_DIR"/. "$DOCS_DIR"/*
-git commit -m "Added build artifacts"
+git commit -m "Added build artifacts for ${VERSION}"
 
-"${SCRIPT_DIR}/version.sh"
+"${SCRIPT_DIR}/version.sh" "$VERSION"

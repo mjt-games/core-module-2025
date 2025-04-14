@@ -10,11 +10,11 @@ fi
 echo "Updating version to $VERSION"
 
 # Update the version in package.json
-sed -i '' "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
+# sed -i '' "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
 
 # Commit the version change
-git add package.json
-git commit -m "Update version to $VERSION"
+# git add package.json
+# git commit -m "Update version to $VERSION"
 
 # Tag the commit with the version
 
