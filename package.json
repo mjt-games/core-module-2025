@@ -1,0 +1,41 @@
+{
+  "name": "@mjt-games/core-module-2025",
+  "version": "0.0.0",
+  "sideEffects": false,
+  "description": "Core MOdule 2025",
+  "type": "module",
+  "scripts": {
+    "docs": "typedoc build/release.d.ts ",
+    "build-docs": "pnpm run build && pnpm run docs",
+    "changelog": "./scripts/changes.sh > CHANGELOG.md",
+    "changelog-version": "pnpm run changelog && ./scripts/version.sh",
+    "publish": "pnpm run build-docs && pnpm run changelog-version",
+    "asbuild:debug": "asc assembly/index.ts --target debug",
+    "asbuild:release": "asc assembly/index.ts --target release",
+    "asbuild": "pnpm run asbuild:debug && npm run asbuild:release",
+    "build": "pnpm run asbuild:release",
+    "test": "node tests"
+  },
+  "keywords": [],
+  "author": "Matt Taylor (https://mjt.dev)",
+  "license": "MIT",
+  "main": "./build/release.js",
+  "types": "./build/release.d.js",
+  "exports": {
+    ".": {
+      "import": "./build/release.js",
+      "types": "./build/release.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "assemblyscript": "^0.27.35",
+    "typedoc": "^0.27.9",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.6",
+    "vite-plugin-restart": "^0.4.2"
+  },
+  "dependencies": {
+    "vitest": "^3.1.1"
+  }
+}
