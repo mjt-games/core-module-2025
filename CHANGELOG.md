@@ -2,6 +2,7 @@
 
 
 ## 2025-04-14
+- Update changelog ([d5e61a7](https://github.com/mjt-games/core-module-2025/commit/d5e61a730df96d57ad7aafd8d30496f74e88b78a)) by Matt Taylor
 - just default imports? ([b18a56e](https://github.com/mjt-games/core-module-2025/commit/b18a56e969926b7bcb2bdb2c8fec0bd5986b3051)) by Matt Taylor
 - Update changelog ([8dae1fe](https://github.com/mjt-games/core-module-2025/commit/8dae1feee7e00931b97ec30b5b0366cc40a262c7)) by Matt Taylor
 - different branch checkout strat ([0df4973](https://github.com/mjt-games/core-module-2025/commit/0df4973bebceb8a5f76799fb2274bf50808dce6d)) by Matt Taylor
