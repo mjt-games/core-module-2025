@@ -25,7 +25,8 @@
     ".": {
       "import": "./build/release.js",
       "types": "./build/release.d.ts"
-    }
+    },
+    "./build/release.wasm": "./build/release.wasm"
   },
   "files": [
     "build"
