@@ -2,6 +2,8 @@
 
 
 ## 2025-04-14
+- make ts happy with exports ([970ecd1](https://github.com/mjt-games/core-module-2025/commit/970ecd14f6a731aee32f045cb5d099be39c8e11e)) by Matt Taylor
+- Update changelog ([85d1229](https://github.com/mjt-games/core-module-2025/commit/85d12298866c15272a0149acf2b8bd2ba60a56aa)) by Matt Taylor
 - add-back-in the exports ([e98bb90](https://github.com/mjt-games/core-module-2025/commit/e98bb90baca8ba7658ac6e72b08f0d8342f694ab)) by Matt Taylor
 - Update changelog ([a07e4e2](https://github.com/mjt-games/core-module-2025/commit/a07e4e203b276b9ea1287c4d17ae5b2e769d37dd)) by Matt Taylor
 - Update changelog ([d5e61a7](https://github.com/mjt-games/core-module-2025/commit/d5e61a730df96d57ad7aafd8d30496f74e88b78a)) by Matt Taylor
