@@ -2,6 +2,8 @@
 
 
 ## 2025-04-14
+- add-back-in the exports ([e98bb90](https://github.com/mjt-games/core-module-2025/commit/e98bb90baca8ba7658ac6e72b08f0d8342f694ab)) by Matt Taylor
+- Update changelog ([a07e4e2](https://github.com/mjt-games/core-module-2025/commit/a07e4e203b276b9ea1287c4d17ae5b2e769d37dd)) by Matt Taylor
 - Update changelog ([d5e61a7](https://github.com/mjt-games/core-module-2025/commit/d5e61a730df96d57ad7aafd8d30496f74e88b78a)) by Matt Taylor
 - just default imports? ([b18a56e](https://github.com/mjt-games/core-module-2025/commit/b18a56e969926b7bcb2bdb2c8fec0bd5986b3051)) by Matt Taylor
 - Update changelog ([8dae1fe](https://github.com/mjt-games/core-module-2025/commit/8dae1feee7e00931b97ec30b5b0366cc40a262c7)) by Matt Taylor
