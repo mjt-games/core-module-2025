@@ -2,6 +2,8 @@
 
 
 ## 2025-04-14
+- added files to package.json ([545c28c](https://github.com/mjt-games/core-module-2025/commit/545c28cc54c9d6db36b63726298637b949dcca5d)) by Matt Taylor
+- Update changelog ([81c5f89](https://github.com/mjt-games/core-module-2025/commit/81c5f89ec9cfa52a54b496fe2c2a3a67ced17a31)) by Matt Taylor
 - remove build dir ([0d5156a](https://github.com/mjt-games/core-module-2025/commit/0d5156ac534fd09f260c70447b5ae9e71d375412)) by Matt Taylor
 - added force on docs dir ([c5522f1](https://github.com/mjt-games/core-module-2025/commit/c5522f15c1cb9fb375f177f0ac3966c094856099)) by Matt Taylor
 - Update changelog ([714312f](https://github.com/mjt-games/core-module-2025/commit/714312f1869ea31f9c687749ea6bb93078225ce8)) by Matt Taylor
