@@ -9,7 +9,7 @@
     "build-docs": "pnpm run build && pnpm run docs",
     "changelog": "./scripts/changes.sh > CHANGELOG.md",
     "changelog-version": "pnpm run changelog && ./scripts/version.sh",
-    "publish": "pnpm run build-docs && pnpm run changelog-version",
+    "publish": "./scripts/publish-build.sh",
     "asbuild:debug": "asc assembly/index.ts --target debug",
     "asbuild:release": "asc assembly/index.ts --target release",
     "asbuild": "pnpm run asbuild:debug && npm run asbuild:release",
