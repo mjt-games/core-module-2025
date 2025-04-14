@@ -21,4 +21,4 @@ echo "Updating version to $VERSION"
 echo "🏷️ Tagging as '$VERSION'..."
 git tag "$VERSION"
 git remote | xargs -I {} git push {} --tags
-git remote | xargs -I {} git push {} --all
+# git remote | xargs -I {} git push {} --all
