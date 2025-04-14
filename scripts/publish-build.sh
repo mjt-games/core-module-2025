@@ -4,7 +4,8 @@ set -euo pipefail
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 BUILD_DIR="${1:-dist}"
-BRANCH_NAME="${2:-build}"
+DOCS_DIR="${2:-docs}"
+BRANCH_NAME="${3:-build}"
 
 # Abort if working directory is dirty
 if [[ -n "$(git status --porcelain)" ]]; then
@@ -39,7 +40,7 @@ pnpm run docs
 
 echo "📦 Committing build and doc artifacts..."
 git add -f "$BUILD_DIR"/. "$BUILD_DIR"/*
-git add -A docs
+git add -f "$DOCS_DIR"/. "$DOCS_DIR"/*
 git commit -m "Added build artifacts"
 
 "${SCRIPT_DIR}/version.sh"
