@@ -1,6 +1,6 @@
 {
   "name": "@mjt-games/core-module-2025",
-  "version": "2025.4.14-1733",
+  "version": "2025.4.14-1728",
   "sideEffects": false,
   "description": "Core MOdule 2025",
   "type": "module",
@@ -25,7 +25,11 @@
     ".": {
       "import": "./build/release.js",
       "types": "./build/release.d.ts"
-    }
+    },
+    "./as": {
+      "import": "./assembly/index.ts"
+    },
+    "./wasm": "./build/release.wasm"
   },
   "files": [
     "build",
