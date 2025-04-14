@@ -2,6 +2,8 @@
 
 
 ## 2025-04-14
+- better versioning in master/package.json and more explicit build branches ([15f11ad](https://github.com/mjt-games/core-module-2025/commit/15f11ad3c84074c636aa692999612d2bfdd5af18)) by Matt Taylor
+- Update changelog ([46fc48c](https://github.com/mjt-games/core-module-2025/commit/46fc48c0c6eac37409a90127cb6b00421e87f546)) by Matt Taylor
 - Update changelog ([17a5122](https://github.com/mjt-games/core-module-2025/commit/17a5122f53c4e28ac9b9e9c91bb787004bab4ed2)) by Matt Taylor
 - better exports including as and wasm ([5c3a70f](https://github.com/mjt-games/core-module-2025/commit/5c3a70f8928b7bc86c0d8d5efc2207a271d086d2)) by Matt Taylor
 - Update changelog ([3328451](https://github.com/mjt-games/core-module-2025/commit/3328451d12a7a5a04e1822dc4c4d84a9b490bcef)) by Matt Taylor
