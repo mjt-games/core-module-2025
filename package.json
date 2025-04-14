@@ -26,10 +26,14 @@
       "import": "./build/release.js",
       "types": "./build/release.d.ts"
     },
-    "./build/release.wasm": "./build/release.wasm"
+    "./as": {
+      "import": "./assembly/index.ts"
+    },
+    "./wasm": "./build/release.wasm"
   },
   "files": [
-    "build"
+    "build",
+    "assembly"
   ],
   "devDependencies": {
     "@types/node": "^22.14.1",
