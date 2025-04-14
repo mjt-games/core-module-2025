@@ -2,6 +2,8 @@
 
 
 ## 2025-04-14
+- debug broken npm mod ([1c94797](https://github.com/mjt-games/core-module-2025/commit/1c947975c5907b739324e336a63736f724bb00e3)) by Matt Taylor
+- Update changelog ([8fe1209](https://github.com/mjt-games/core-module-2025/commit/8fe120963b2a68680daaf25167245ee8ef3aeb76)) by Matt Taylor
 - pnpm does bad things with publish so publish->release ([8e168aa](https://github.com/mjt-games/core-module-2025/commit/8e168aaac1bebf021e093eee7dde8fbb92d26cf4)) by Matt Taylor
 - Update changelog ([ed764af](https://github.com/mjt-games/core-module-2025/commit/ed764af78a9e9ba4365de9445c7d3ce8127ac883)) by Matt Taylor
 - Update changelog ([5b69996](https://github.com/mjt-games/core-module-2025/commit/5b6999616a9e7ebb378b2f46755d5c20b49fa722)) by Matt Taylor
