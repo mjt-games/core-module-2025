@@ -27,7 +27,8 @@
       "types": "./build/release.d.ts"
     },
     "./as": {
-      "import": "./assembly/index.ts"
+      "import": "./assembly/index.ts",
+      "types": "./assembly/index.ts"
     },
     "./build/release.wasm": "./build/release.wasm"
   },
