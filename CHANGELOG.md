@@ -2,6 +2,7 @@
 
 
 ## 2025-04-14
+- Update changelog ([5b69996](https://github.com/mjt-games/core-module-2025/commit/5b6999616a9e7ebb378b2f46755d5c20b49fa722)) by Matt Taylor
 - just use lots of branches for build ([8c9dce6](https://github.com/mjt-games/core-module-2025/commit/8c9dce6a189052e70ad452510a94061ddbbef2a3)) by Matt Taylor
 - Update changelog ([c66735a](https://github.com/mjt-games/core-module-2025/commit/c66735a52182b0eabfe81a062857a4e7d744b58c)) by Matt Taylor
 - back to simple build branch, added version ([5d5af5e](https://github.com/mjt-games/core-module-2025/commit/5d5af5ed72dd14a998498e0c629a21872cb91d5c)) by Matt Taylor
