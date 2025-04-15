@@ -1,6 +1,6 @@
 import { StringInterner } from "./StringInterner";
 
-const interner = new StringInterner();
+export const interner = new StringInterner();
 
 export function internString(str: string): u32 {
   return interner.intern(str);

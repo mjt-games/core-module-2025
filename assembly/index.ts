@@ -1,1 +1,2 @@
-export * from "./internString";
+export * from "./string/Strings";
+export * from "./entity/Entities";

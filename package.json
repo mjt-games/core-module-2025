@@ -14,7 +14,7 @@
     "asbuild:release": "asc assembly/index.ts --target release",
     "asbuild": "pnpm run asbuild:debug && npm run asbuild:release",
     "build": "pnpm run asbuild:release",
-    "test": "node tests"
+    "test": "pnpm run build && vitest"
   },
   "keywords": [],
   "author": "Matt Taylor (https://mjt.dev)",
