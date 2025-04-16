@@ -95,10 +95,10 @@ export class EntityManager {
 
   find(query: Query): IdentifiedEntity[] {
     const result: IdentifiedEntity[] = [];
-    const keys = this.entitiesById.keys();
-    for (let i = 0; i < keys.length; i++) {
-      const key = keys[i];
-      const entity = this.entitiesById.get(key);
+    const ids = this.entitiesById.keys();
+    for (let i = 0; i < ids.length; i++) {
+      const id = ids[i];
+      const entity = this.entitiesById.get(id);
       let match = false;
       const eqId = interner.intern("==");
       for (let j = 0; j < query.length; j++) {
@@ -106,6 +106,7 @@ export class EntityManager {
         switch (expr.operator) {
           case eqId: {
             console.log(`testing eqId ${expr.left} ${expr.right}`);
+            // const kv = entity.findIndex(kv => kv.kvs === expr.left);
             match = expr.left == expr.right;
           }
         }
@@ -117,7 +118,7 @@ export class EntityManager {
         // }
       }
       if (match) {
-        result.push({ id: key, entity: entity });
+        result.push({ id: id, entity: entity });
       }
     }
     return result;
